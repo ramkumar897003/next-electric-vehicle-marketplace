@@ -32,7 +32,7 @@ A Next.js application for browsing and comparing electric vehicles.
 
 ```bash
 git clone https://github.com/ramkumar897003/next-electric-vehicle-marketplace.git
-cd aampere-app
+cd next-electric-vehicle-marketplace
 ```
 
 2. Install dependencies:
