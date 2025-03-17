@@ -31,8 +31,8 @@ A Next.js application for browsing and comparing electric vehicles.
 1. Clone the repository:
 
 ```bash
-git clone <https://github.com/ramkumar897003/next-electric-vehicle-marketplace.git>
-cd aampere-app
+git clone https://github.com/ramkumar897003/next-electric-vehicle-marketplace.git
+cd next-electric-vehicle-marketplace
 ```
 
 2. Install dependencies:
