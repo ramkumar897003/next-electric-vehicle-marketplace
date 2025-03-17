@@ -6,7 +6,7 @@ import { VehicleType } from "@/features/vehicles/VehicleTypes";
 
 const ITEMS_PER_PAGE = 6;
 
-async function getVehiclesData(): Promise<VehicleResponse> {
+export async function getVehiclesData(): Promise<VehicleResponse> {
   // Get the path to the JSON file
   const jsonPath = path.join(
     process.cwd(),

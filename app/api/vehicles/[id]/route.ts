@@ -1,7 +1,6 @@
 import { NextResponse } from "next/server";
-import path from "path";
-import fs from "fs/promises";
 import { VehicleType } from "@/features/vehicles/VehicleTypes";
+import { getVehiclesData } from "../route";
 
 export async function GET(
   request: Request,
@@ -9,15 +8,7 @@ export async function GET(
 ) {
   const params = await props.params;
   try {
-    const jsonPath = path.join(
-      process.cwd(),
-      "public",
-      "data",
-      "vehicle_data.json"
-    );
-
-    const jsonData = await fs.readFile(jsonPath, "utf-8");
-    const { data } = JSON.parse(jsonData);
+    const { data } = await getVehiclesData();
 
     const vehicle = data.find((v: VehicleType) => v.id === parseInt(params.id));
 
